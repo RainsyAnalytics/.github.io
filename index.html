@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Power BI Report</title>
+    <title>Full Power BI Report</title>
     <style>
         body {
-            margin: 0; /* Removes default spacing */
+            margin: 0;
             padding: 0;
+            overflow-x: hidden; /* Prevents horizontal scroll on page */
         }
         iframe {
             width: 100%; /* Full width of the page */
-            height: 600px; /* Fixed height, adjust as needed */
-            border: none; /* Cleaner look */
+            height: 100vh; /* Full viewport height as a starting point */
+            border: none;
+            display: block; /* Removes extra spacing */
         }
     </style>
 </head>
 <body>
-    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiODg0OTI5MDgtZTA2Yi00ZmJiLTkxOWMtMDZkZjIzODA2YTk5IiwidCI6IjM4NWJjOGZhLTFjMDUtNDU1YS05MzE3LTExY2E1MTZkZDI2NyJ9" allowFullScreen></iframe>
+    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiODg0OTI5MDgtZTA2Yi00ZmJiLTkxOWMtMDZkZjIzODA2YTk5IiwidCI6IjM4NWJjOGZhLTFjMDUtNDU1YS05MzE3LTExY2E1MTZkZDI2NyJ9" allowfullscreen></iframe>
 </body>
 </html>

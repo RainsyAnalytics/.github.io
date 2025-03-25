@@ -10,19 +10,29 @@
             padding: 0;
             overflow-x: hidden;
             font-family: Arial, sans-serif;
-        }
-        iframe {
-            width: 100%;
-            height: 100vh;
-            border: none;
-            display: block;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .container {
             text-align: center;
             padding: 20px;
         }
-        .spacer {
-            height: 50px;
+        .tile {
+            background: white;
+            width: 80%;
+            max-width: 1000px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 500px; /* Adjust height as needed */
+            border: none;
+            display: block;
         }
     </style>
 </head>
@@ -32,8 +42,13 @@
         <p>This is my first project.</p>
         <a href="/">Back to Home</a>
     </div>
-    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiODg0OTI5MDgtZTA2Yi00ZmJiLTkxOWMtMDZkZjIzODA2YTk5IiwidCI6IjM4NWJjOGZhLTFjMDUtNDU1YS05MzE3LTExY2E1MTZkZDI2NyJ9" allowfullscreen></iframe>
-    <div class="spacer"></div>
-    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiODg0OTI5MDgtZTA2Yi00ZmJiLTkxOWMtMDZkZjIzODA2YTk5IiwidCI6IjM4NWJjOGZhLTFjMDUtNDU1YS05MzE3LTExY2E1MTZkZDI2NyJ9" allowfullscreen></iframe>
+    
+    <div class="tile">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiODg0OTI5MDgtZTA2Yi00ZmJiLTkxOWMtMDZkZjIzODA2YTk5IiwidCI6IjM4NWJjOGZhLTFjMDUtNDU1YS05MzE3LTExY2E1MTZkZDI2NyJ9" allowfullscreen></iframe>
+    </div>
+    
+    <div class="tile">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiODg0OTI5MDgtZTA2Yi00ZmJiLTkxOWMtMDZkZjIzODA2YTk5IiwidCI6IjM4NWJjOGZhLTFjMDUtNDU1YS05MzE3LTExY2E1MTZkZDI2NyJ9" allowfullscreen></iframe>
+    </div>
 </body>
 </html>

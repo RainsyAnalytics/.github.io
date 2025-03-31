@@ -5,29 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
     <style>
-        body {
+        html, body {
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
+            height: 100%;
+            overflow: hidden;
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
         .container {
             text-align: center;
             padding: 20px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.9);
         }
-        .tile {
-            background: white;
-            width: 80%;
-            max-width: 1000px;
-            aspect-ratio: 16 / 9; /* Maintains correct Power BI aspect ratio */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            margin-bottom: 20px;
-            overflow: hidden; /* Ensures iframe doesn't overflow */
+        .iframe-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
         iframe {
             width: 100%;
@@ -44,11 +44,7 @@
         <a href="/">Back to Home</a>
     </div>
     
-    <div class="tile">
-        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiODg0OTI5MDgtZTA2Yi00ZmJiLTkxOWMtMDZkZjIzODA2YTk5IiwidCI6IjM4NWJjOGZhLTFjMDUtNDU1YS05MzE3LTExY2E1MTZkZDI2NyJ9" allowfullscreen></iframe>
-    </div>
-    
-    <div class="tile">
+    <div class="iframe-container">
         <iframe src="https://app.powerbi.com/view?r=eyJrIjoiODg0OTI5MDgtZTA2Yi00ZmJiLTkxOWMtMDZkZjIzODA2YTk5IiwidCI6IjM4NWJjOGZhLTFjMDUtNDU1YS05MzE3LTExY2E1MTZkZDI2NyJ9" allowfullscreen></iframe>
     </div>
 </body>
